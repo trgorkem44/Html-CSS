@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;/*1200px'e kadar küçüldü.*/
+    overflow: hidden;/*Resim taşmasını engeller.*/
+    margin: auto;
+}
+.post{
+    width: 47%;/*Yüzde 50 verince ve margin 10px'den dolayı yan yana gelmeleri gerekirken alt alta geliyorlar.*/
+    overflow: hidden;
+    background: #f1f1f1;
+    float: left;/*Geri kalan 2 tanesini sağ tarafa gönderdi.*/
+    margin: 10px;/*Marginsiz yan yana olurlar.*/
+    border-radius: 6px;
+    box-shadow: 0 0 10px black;
+} 
+.post img{
+    width: 100%;
+    height: 280px;
+}
+.post h2{
+    margin: 0;
+    padding: 0 10;
+}
+@media screen and (max-width:680px){/*Bilgisayarda sitemizin boyutlarını ayarlıyoruz.Tv yazsa screen yerine televizyon nasıl görüneceğiniz ayarlıyoruz.*/
+   .post{
+       width: 96%;/*Köşelerde boşluk olduğu için.*/
+       margin: 2%;
+   }
+    
+}
