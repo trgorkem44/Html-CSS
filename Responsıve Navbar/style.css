@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #f3f3f3;
+}
+.header{
+    height: 100px;
+    background: #1da1f2;
+    padding: 20px;
+    color: #fff;
+}
+.logo{/*Logo ile diğer yazılar arasında 100 piksellik boşlu var.*/
+    line-height: 100px;
+    float: left;
+    cursor: pointer;
+}
+.menu{
+    float: right;
+    line-height: 100px;
+}
+.menu a{
+    color: #fff;
+    text-transform: uppercase;/*Yazılarımızın hepsini büyütüyor.*/
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+.show-menu-btn, .hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    /*display: none;Yazdığımızda ise sağdaki x kapat işareti görünürlülüğünü kaybediyor.*/
+}
+.show-menu-btn{/*Üç çizgili butonumuzu sağa atıyoruz.*/
+    float: right;
+}
+.show-menu-btn i{
+    line-height: 100%;
+    padding: 30px 0;
+}
+.menu a:hover,
+.show-menu-btn:hover,/*Üç çizginin olduğu yer*/
+.hide-menu-btn:hover{/*Üç çizgiye bastığımızda açılan menünün içindeki yerler.*/
+    color: #e26d00;
+}
+#chk{
+    position: absolute;
+    visibility: hidden;/*Sol üstteki kutucuk ve sağ üsteki x kalktı.*/
+}
+.content{
+    padding: 0 20px;
+}
+.content img{
+    width: 100%;
+    max-width: 700px;
+    margin: 20px;
+}
+.content p{
+    text-align: justify;/*İki yana yaslamak için */
+}
+@media screen and (max-width: 800px){/*800 pikselin altına indiğinde sağ üstteki yazılar üç çizgi içinde sunulsun.*/
+    .show-menu-btn, .hide-menu-btn{
+        display: block;
+    }
+    .menu{/*Üç çizgiye bastığımızda açılan menüyü düzenliyoruz.*/ 
+        position: fixed;
+        width: 100%;
+        height: 100vh;/*Olduğu kısımın tamamını kaplayacak.*/
+        background: #333;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .hide-menu-btn{/*X simizi yani kapat işaretini düzenliyoruz.*/
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #chk:checked ~ .menu{/*Tıklanabilir özelliği veriyoruz.(MENÜ'ye)*/
+       right: 0;
+    }
+}
