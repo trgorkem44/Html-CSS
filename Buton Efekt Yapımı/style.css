@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #b8b5dd;
+}
+
+
+.btn{
+    background: #ffc107;
+    width: 200px;
+    height: 60px;
+    position: absolute;/*Body etiketinin içinde olduğu için, absolute body etiketine göre al.*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/*Tam ortaya hızalamış oluyor.*/
+    border-radius: 5px;
+    cursor: pointer;/*Tıklanabilir işareti yapıyoruz.*/
+}
+.btn:before {
+    color: white;
+    font-family: sans-serif;
+    content: "Hover ME";
+    position: absolute;/*Bu dive göre hizalamasını istiyorum.*/
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    font-size: 20px;/*Yazı tipi.*/
+    transition: all 0.5s;    /*Daha yavaş gitmesine sebep oluyor.*/
+}
+.btn:hover::before{
+
+    top: -30px;/*Üstüne geldiğimiz zaman yazımız yukarı kaçıyor.*/
+}
+.btn::after{
+    font-family: "Ionicons";
+    content: "\f141";
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 140%;/*Aşağı indirdik.*/
+    font-size: 40px;
+
+
+}
+.btn:hover::after{
+    transition: all 0.5s;
+    top: 50%;
+}
