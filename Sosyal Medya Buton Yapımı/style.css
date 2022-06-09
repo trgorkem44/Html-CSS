@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background: #f1f1f1;
+}
+.social-media{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/*div ler normalde blok etiketlerdir alt alta sıralanır.Biz inline yapınca yan yana diziliyorlar.*/
+.social-media div {
+    display: inline;
+}
+/*Display: flex; nedeni ise biz flexboxda sıralamada hizalamada kolaylık getiriyor.*/
+.social-media div a{
+    display: inline-flex;
+    width: 80px;
+    height: 80px;
+    background: #2c3e50;
+    font-size: 40px;
+    color: #fff;
+    margin: 0 6px;/*Margini yukarıdan aşağı sıfır sağdan soldan 6 piksel boşluk bırakır.*/
+    border-radius: 50%;
+    justify-content: center;/*Satırda ortalama işler yapar.*/
+    align-items: center;/*Tam ortalama yaptı.*/
+    transition: 0.5s;/*Hepsi eşit döner.*/
+}
+.social-media .facebook a:hover{
+    background: #4267B2;
+}
+.social-media a i{/*Üzerine geldiğimizde 0.5 saniyede geçiş yapıyor.*/
+    transition: 0.5s all;
+}
+.social-media a:hover > i{/*Üzerine geldiğimizde iconlar büyüyor bize doğru geliyor.*/
+    transform: scale(1.6) rotate(360deg);/*Rotate sayesinde iconlarımızı dönmesini sağlıyoruz.*/
+}
+.social-media .twitter a:hover{
+    background: #1da1f2;
+}
+.social-media .google a:hover{
+    background: #d34c3d;
+}
+.social-media .instagram a:hover{
+    background: #7315c6;
+}
+.social-media .youtube a:hover{
+    background: #fe0000;
+}
+
