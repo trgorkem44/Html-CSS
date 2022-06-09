@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="//fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hello, world!</title>
+    <style>
+      a{
+        text-decoration:none;
+        color:inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <span class="fas fa-shipping-fast mr-1"></span>
+                <!-- <img src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> -->
+                Bootstrap
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link"  href="index.html">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Hakkımızda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Hizmetler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">İletişim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav aria-label="breadcrumb" class="d-flex align-items-center ps-5" style="background: url('img/bg3.jpg') no-repeat center;height:200px;margin-top: 50px;">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+          <li class="breadcrumb-item active" aria-current="page">İletişim</li>
+        </ol>
+      </nav>
+      <main>
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-md-12 pb-5 text-center">
+              <h1 class="display-2">    Bize Ulaşın</h1>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <span class="fas fa-map-marked-alt display-4 text-danger mb-2"></span>
+                  <h5>Adres</h5>
+                  <p>Kadiköy / İstanbul</p>
+                </div>
+                <div class="col-md-6">
+                  <span class="fas fa-headset display-4 text-danger mb-2"></span>
+                  <h5>Telefon</h5>
+                  <p><a href="tel:0555 555 55 55">+90 555 555 55 55</a></p>
+                </div>
+                <div class="col-md-6">
+                  <span class="fas fa-map-marked-alt display-4 text-danger mb-2"></span>
+                  <h5>Email</h5>
+                  <p><a href="mailto:mail@example.com">mail@example.com</a></p>
+                </div>
+                <div class="col-md-6">
+                  <span class="fas fa-user-clock display-4 text-danger mb-2"></span>
+                  <h5>Çalışma Saatleri</h5>
+                  <p>Saat 8:00 - 20:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="name">İsim</label>
+                  <input type="text" id="name" class="form-control"  aria-label="First name">
+                </div>
+                <div class="col-md-6">
+                  <label for="surname">Soyisim</label>
+                  <input type="text" id="surname" class="form-control"  aria-label="Last name">
+                </div>
+                <div class="col-md-6">
+                  <label for="mail">Email</label>
+                  <input type="email" id="mail" class="form-control"  aria-label="Last name">
+                </div>
+                <div class="col-md-6">
+                  <label for="subject">Konu</label>
+                  <input type="text" id="subject" class="form-control"  aria-label="Last name">
+                </div>
+                <div class="col-md-12">
+                   <label for="exampleFormControlTextarea1" class="form-label">Mesaj</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-12 mt-3 d-flex justify-content-end pe-3">
+                  <button type="submit" class="btn btn-primary ">Gönder</button>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="mt-4 pt-5">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96384.53928927268!2d28.99301308362685!3d40.98111180559732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac790b17ba89d%3A0xd2d24ea0437a7ee2!2zS2FkxLFrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1647672334720!5m2!1str!2str" width="100%" height="250px" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
+            </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="mt-5 bg-black text-white">
+        <div class="container-fluid p-5">
+          <div class="row p-5">
+            <div class="col-md-4 ">
+              <h5 class="mb-3">Hakkımızda</h5>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
+            </div>
+            <div class="col-md-4 ps-5">
+              <div class="ps-5">
+                <h5 class="mb-3 ">Hizmetler</h5>
+           
+              <p><strong><span class="fas fa-angle-right me-2"></span> </strong> Ev Taşıma</p>
+              <p><strong><span class="fas fa-angle-right me-2"></span> </strong> Kurumsal Nakliye</p>
+              <p><strong><span class="fas fa-angle-right me-2"></span> </strong>Ticari Nakliye</p>
+              </div>
+            
+            </div>
+            <div class="col-md-4 ">
+              <h5 class="mb-3">İletişim</h5>
+              <p><strong>Adres: </strong> Kadıköy / İstanbul</p>
+              <p><strong>Telefon: </strong> 0 555 555 55 55</p>
+              <p><strong>Mail : </strong> info@example.com</p>
+            </div>
+      
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
