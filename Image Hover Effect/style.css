@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #f3f3f3;
+}
+.container{
+    position: absolute;/*Ortalaması için.Önce yukarıdan sonra aşağıdan ortalaması için veriyoruz.*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container .post img{/*Containerın içindeki posta ve sonrasında ise img ulaştık.Sebep:resim boyutlarını değiştirebilmek için.*/
+    display: block;
+    width: 600px;
+    height: 400px;
+}
+.caption h2{
+    color: white;
+    font-size: 50px;
+    border: 6px ridge white;/*Dikdörtgen içine aldık.*/
+    padding: 10px 30px;/*10px yukarıdan aşağı 30px ise sağdan soldan*/
+}
+.container .post .caption{
+    width: 0px;
+    height: 400px;
+    background: rgba(237,124, 64, 0.7);
+    position: absolute;/*Bu sayede hover yazımızı resimin üstüne alabildik.*/
+    top: 0;
+    display: flex;/*Caption içi tamamen hizalanması için veriyoruz.*/
+    justify-content: center;
+    align-items: center;/*Eğer yazmaksak yazımızın bulunduğu kutucuk alttan büyüyor.*/
+    text-align: center;
+    overflow: hidden;
+    transition: 0.7s;/*Hover yazısının ortaya çıkmna hızı.*/
+    cursor: pointer;
+}
+.post:hover .caption{/*Çünkü resmin üzerine geldiğimizde hover yazısı gözükecek.*/
+    width: 600px;
+}
